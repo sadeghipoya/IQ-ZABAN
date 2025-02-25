@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from eduport.webestica.com/course-detail.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 21 Jun 2023 07:35:27 GMT -->
+<head>
+	<title>IQZABAN</title>
+
+	<!-- Meta Tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="author" content="Webestica.com">
+	<meta name="description" content="Eduport- LMS, Education and Course Theme">
+
+	<!-- Dark mode -->
+	<script>
+		const storedTheme = localStorage.getItem('theme')
+ 
+		const getPreferredTheme = () => {
+			if (storedTheme) {
+				return storedTheme
+			}
+			return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+		}
+
+		const setTheme = function (theme) {
+			if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+				document.documentElement.setAttribute('data-bs-theme', 'dark')
+			} else {
+				document.documentElement.setAttribute('data-bs-theme', theme)
+			}
+		}
+
+		setTheme(getPreferredTheme())
+
+		window.addEventListener('DOMContentLoaded', () => {
+		    var el = document.querySelector('.theme-icon-active');
+			if(el != 'undefined' && el != null) {
+				const showActiveTheme = theme => {
+				const activeThemeIcon = document.querySelector('.theme-icon-active use')
+				const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
+				const svgOfActiveBtn = btnToActive.querySelector('.mode-switch use').getAttribute('href')
+
+				document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+					element.classList.remove('active')
+				})
+
+				btnToActive.classList.add('active')
+				activeThemeIcon.setAttribute('href', svgOfActiveBtn)
+			}
+
+			window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+				if (storedTheme !== 'light' || storedTheme !== 'dark') {
+					setTheme(getPreferredTheme())
+				}
+			})
+
+			showActiveTheme(getPreferredTheme())
+
+			document.querySelectorAll('[data-bs-theme-value]')
+				.forEach(toggle => {
+					toggle.addEventListener('click', () => {
+						const theme = toggle.getAttribute('data-bs-theme-value')
+						localStorage.setItem('theme', theme)
+						setTheme(theme)
+						showActiveTheme(theme)
+					})
+				})
+
+			}
+		})
+		
+	</script>
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="assets/images/favicon.ico">
+
+	<!-- Google Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com/">
+	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&amp;family=Roboto:wght@400;500;700&amp;display=swap">
+
+	<!-- Plugins CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap-icons/bootstrap-icons.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/tiny-slider/tiny-slider.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/glightbox/css/glightbox.css">
+	<link rel="stylesheet" type="text/css" href="assets/vendor/choices/css/choices.min.css">
+
+	<!-- Theme CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+<!-- Header START -->
+<header class="navbar-light navbar-sticky header-static">
+	<!-- Logo Nav START -->
+	<nav class="navbar navbar-expand-xl">
+		<div class="container">
+			<!-- Logo START -->
+			
+			
+			<a class="navbar-brand" href="index.php">
+				<div class="animated_rainbow_2">iqzaban</div>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>.animated_rainbow_2 {
+	font-size: 42px;
+	font-family: Arial Black, Gadget, sans-serif;
+    -webkit-animation: animatedBackground_b 5s linear infinite alternate;
+}
+
+@keyframes animatedBackground_b{
+	0% {color: #ff8b00}
+	10% {color: #e8ff00}
+	20% {color: #5dff00}
+	30% {color: #00ff2e}
+	40% {color: #00ffb9}
+	50% {color: #00b9ff}
+	60% {color: #002eff}
+	70% {color: #5d00ff}
+	80% {color: #e800ff}
+	90% {color: #ff008b}
+	100% {color: #ff0000}
+}
+
+</style>
+</head>
+<body>
+
+
+
+</body>
+</html>
+
+
+
+
+
+				
+				
+				</a>
+			<!-- Logo END -->
+
+			<!-- Responsive navbar toggler -->
+			
+
+			<!-- Main navbar START -->
+			
+			
+			<!-- Main navbar END -->
+
+			<!-- Profile START -->
+			<div class="dropdown ms-1 ms-lg-0">
+				<a class="avatar avatar-sm p-0" href="#" id="profileDropdown" role="button" data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown" aria-expanded="false">
+					<button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-animation">
+					<span></span>
+					<span></span>
+					<span></span>
+				</span>
+			</button>
+				</a>
+				<ul class="dropdown-menu dropdown-animation dropdown-menu-end shadow pt-3" aria-labelledby="profileDropdown"<p align="right">
+					<!-- Profile info -->
+					
+					
+          <li> <hr class="dropdown-divider"></li>
+					<!-- Links -->
+					<li><a class="dropdown-item" href="https://iqzaban.ir/panel/register.php"><i class="text-success fa-fw bi bi-cloud-download-fill me-2"></i>ثبت نام</a></li>
+					<li><a class="dropdown-item" href="https://iqzaban.ir/panel/index.php?rp=/login"><i class="text-info fa-fw bi bi-toggle-off me-2"></i>ورود</a></li>
+					<li><a class="dropdown-item" href="Class.php"><i class="text-orange fa-fw bi bi-puzzle-fill me-2"></i>کلاس ها</a></li>
+					<li><a class="dropdown-item bg-danger-soft-hover" href="Rules.php"><i class="text-purple fa-fw bi bi-stickies-fill me-2"></i>قوانین</a></li>
+					<li> <hr class="dropdown-divider"></li>
+					<!-- Dark mode options START -->
+					<li>
+						<div class="bg-light dark-mode-switch theme-icon-active d-flex align-items-center p-1 rounded mt-2">
+							<button type="button" class="btn btn-sm mb-0" data-bs-theme-value="light">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sun fa-fw mode-switch" viewBox="0 0 16 16">
+									<path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+									<use href="#"></use>
+								</svg> روشن
+							</button>
+							<button type="button" class="btn btn-sm mb-0" data-bs-theme-value="dark">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-stars fa-fw mode-switch" viewBox="0 0 16 16">
+									<path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"/>
+									<path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
+									<use href="#"></use>
+								</svg> تاریک
+							</button>
+							<button type="button" class="btn btn-sm mb-0 active" data-bs-theme-value="auto">
+								<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-half fa-fw mode-switch" viewBox="0 0 16 16">
+									<path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z"/>
+									<use href="#"></use>
+								</svg> خودکار
+							</button>
+						</div>
+					</li> 
+					<!-- Dark mode options END-->
+				</ul>
+			</div>
+			<!-- Profile START -->
+		</div>
+	</nav>
+	<!-- Logo Nav END -->
+</header>
+<!-- Header END -->
+
+<!-- **************** MAIN CONTENT START **************** -->
+<main>
+
+<!-- =======================
+Page intro START -->
+
+
+<!-- =======================
+Page intro END -->
+
+<!-- =======================
+Page content START -->
+<section class="pb-0 py-lg-5">
+	<div class="container">
+		<div class="row">
+			<!-- Main content START -->
+			<div class="col-lg-8">
+				<div class="card shadow rounded-2 p-0">
+					<!-- Tabs START -->
+					
+					
+					<!-- Tabs END -->
+
+					<!-- Tab contents START -->
+					<div class="card-body p-4">
+						<div class="tab-content pt-2" id="course-pills-tabContent"<p align="right">
+							<!-- Content START -->
+							
+							<h2 class="mb-0">Bکلاس زبان آنلاین سطح 1</h2>
+			<p></p>
+
+
+<h6 class="lead mb-4">آموزش زبان انگلیسی که در این بخش قرار دارند مناسب زبان آموزان سطح متوسط می باشد. پس از پایان این کلاس زبان آموز قادر خواهد بود اکثر متونی را که در محل کار، مدرسه و یا در شرایط دیگر می خواند و همچنین آنچه را که در این محیط ها می شنود، درک کند. همچنین می تواند درهنگام سفر در کشور انگلیسی زبان از پس صحبت کردن در اکثر شرایط بر آید و درباره موارد نظیر تجربیات و وقایع گذشته و آرزوهای خود صحبت کند و همچنین راجع به عقاید و برنامه ها دلیل آورده و آن ها را شرح دهد این کلاس شامل 3 ترم است که هر ترم از 10 درس تشکیل شده
+</h6>
+
+
+						
+							<!-- Content END -->
+
+						</div>
+						
+						
+						
+						
+						
+						
+					</div>
+					
+					
+					
+					<!-- Tab contents END -->
+				</div>
+				
+				
+				<h6 class="lead mb-4">
+				
+
+</h6>
+				<div class="card shadow rounded-2 p-0">
+					<!-- Tabs START -->
+					
+					
+					<!-- Tabs END -->
+
+					<!-- Tab contents START -->
+					
+					
+					<section class="pt-0 pt-md-5">
+	<div class="container">
+		<!-- Title -->
+		
+		<div class="row mb-4">
+			<div class="col-lg-8 text-center mx-auto">
+				<h2 class="fs-1 mb-0">Bدرس های سطح 1</h2>
+				
+			</div>
+		</div>
+
+			<div class="row g-4">
+			<!-- Card Item START -->
+			<div class="col-md-6 col-lg-4 col-xxl-3">
+				<div class="card p-2 shadow h-100">
+					<div class="rounded-top overflow-hidden">
+					
+<center>					
+						<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-6bfd2b87" data-id="6bfd2b87" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-5089d35c elementor-widget elementor-widget-text-editor" data-id="5089d35c" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+													</div>
+				</div>
+				<div class="elementor-element elementor-element-7f55ebb3 elementor-widget elementor-widget-heading" data-id="7f55ebb3" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">B1 CEFR
+</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-7846c8ba elementor-widget elementor-widget-heading" data-id="7846c8ba" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">ترم 1</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-629bf47d elementor-widget elementor-widget-text-editor" data-id="629bf47d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p><b>شرح تجربیات و رویدادها</b></p><p><b>ابراز امیدها و جاه طلبی ها</b></p><p><b>توصیف احساسات</b></p><p><b>دلیل آوردن</b></p><p><b>نظر دادن</b></p><p><b>بیان ترجیحات</b></p><p><b>بیان تعهدات</b></p><p><b>ابراز یقین</b></p><p><b>توصیف وقایع گذشته</b></p><p><b>توصیف رویدادهای آینده</b></p><div> </div>						</div>
+				</div>
+					</div>
+		</div>
+		<center>
+						
+						<!-- Hover element -->
+						
+						
+					</div>
+					<!-- Card body -->
+				
+				
+				
+				</div>
+			</div>	
+			<!-- Card Item END -->
+
+			<!-- Card Item START -->
+			
+			
+			
+			<!-- Card Item END -->
+
+			<!-- Card Item START -->
+			<div class="col-md-6 col-lg-4 col-xxl-3">
+				<div class="card p-2 shadow h-100">
+					
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-56a90dfd" data-id="56a90dfd" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			
+			<center>
+		<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-56a90dfd" data-id="56a90dfd" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-92f48a6 elementor-widget elementor-widget-text-editor" data-id="92f48a6" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+													</div>
+				</div>
+				<div class="elementor-element elementor-element-4dc7f30c elementor-widget elementor-widget-heading" data-id="4dc7f30c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">B1 CEFR
+</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-713f9f13 elementor-widget elementor-widget-heading" data-id="713f9f13" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">ترم 2</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-4bb7a5aa elementor-widget elementor-widget-text-editor" data-id="4bb7a5aa" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p><b>قید زمان، درجه، شیوه</b></p><p><b>عادات و حالات گذشته (معمولاً)</b></p><p><b>ارائه کامل ساده</b></p><p><b>حالت ها: باید داشته باشد، ممکن است و غیره</b></p><p><b>حال مستمر (آینده)</b></p><p><b>آینده ساده: اراده</b></p><p><b>آینده: رفتن به</b></p><p><b>حال کامل استمراری</b></p><p><b>گذشته استمراری</b></p><p><b>گذشته کامل ساده</b></p><p><b>شرایط (اول و دوم)</b></p><p><b>آینده مستمر</b></p><p><b>غیرفعال ها</b></p>						</div>
+				</div>
+					</div>
+		</div>
+					<center>
+		</div>
+					
+					<!-- Card body -->
+					
+					
+					
+				</div>
+			</div>
+			<!-- Card Item END -->
+
+			<!-- Card Item START -->
+			
+			
+			<!-- Card Item END -->
+
+			<!-- Card Item START -->
+			
+			
+			
+			<!-- Card Item END -->
+
+			<!-- Card Item START -->
+			
+			
+			
+			<!-- Card Item END -->
+
+			<!-- Card Item START -->
+			<div class="col-md-6 col-lg-4 col-xxl-3">
+				<div class="card p-2 shadow h-100">
+					
+					<center>					
+						<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-46f762f2" data-id="46f762f2" data-element_type="column" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+			<div class="elementor-widget-wrap elementor-element-populated">
+								<div class="elementor-element elementor-element-5598fedd elementor-widget elementor-widget-text-editor" data-id="5598fedd" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+													</div>
+				</div>
+				<div class="elementor-element elementor-element-455cff0 elementor-widget elementor-widget-heading" data-id="455cff0" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">B1 CEFR
+</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-562c0ff8 elementor-widget elementor-widget-heading" data-id="562c0ff8" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">ترم 3</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-d4d79ee elementor-widget elementor-widget-text-editor" data-id="d4d79ee" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p><b>احساسات و عواطف</b></p><p><b>سفر و حمل و نقل</b></p><p><b>سرگرمی</b></p><p><b>فعالیت های اوقات فراغت</b></p><p><b>ورزش، تندرستی و تناسب اندام</b></p><p><b>تحصیلات</b></p><p><b>اخبار و رسانه ها</b></p><p><b>فن آوری</b></p><p><b>عبارات زمانی برای گذشته</b></p><p><b>عبارات زمانی برای آینده</b></p>						</div>
+				</div>
+					</div>
+		</div>
+		<center>
+					
+					<!-- Card body -->
+					
+					
+				</div>
+			</div>
+			<!-- Card Item END -->
+
+			<!-- Card Item START -->
+		
+		
+		
+			<!-- Card Item END -->
+
+		</div>
+		<!-- Button -->
+		
+	</div>
+</section>
+					
+					
+					<!-- Tab contents END -->
+				</div>
+			</div>
+			
+			
+			<!-- Main content END -->
+
+			<!-- Right sidebar START -->
+			<div class="col-lg-4 pt-5 pt-lg-0">
+				<div class="row mb-5 mb-lg-0">
+					<div class="col-md-6 col-lg-12">
+						<!-- Video START -->
+						<div class="card shadow p-2 mb-4 z-index-9">
+							
+							
+		
+							<!-- Card body -->
+							<div class="card-body px-3"<p align="right">
+								<!-- Info -->
+								<center>
+								<div class="d-flex justify-content-between align-items-center">
+									<!-- Price and time -->
+									<div class="card card-body text-center bg-dark text-white p-5">
+					
+					<h4 class="text-white">Bکلاس سطح 1</h4>
+					
+					<h3 class="fs-1 text-white mt-3">170T</h3>
+					<a href="https://iqzaban.ir/panel/index.php?rp=/store/khls-anlyn/b1" class="btn btn-success mb-2">ثبت نام</a>
+					
+
+									<!-- Share button with dropdown -->
+									<div class="dropdown">
+										<!-- Share button -->
+										
+										
+										<!-- dropdown button -->
+										
+									</div>
+								</div>
+<center>
+								<!-- Buttons -->
+
+								
+							</div>
+						</div>
+						<!-- Video END -->
+
+						<!-- Course info START -->
+						<div class="card card-body shadow p-4 mb-4"<p align="right">
+							<!-- Title -->
+							<center><h4 class="mb-3">مشخصات کلاس ها</h4><center>
+							<ul class="list-group list-group-borderless">
+								<li class="list-group-item d-flex justify-content-between align-items-center">
+									<span class="h6 fw-light mb-0"><i class="fas fa-fw fa-book-open text-primary"></i>درس ها</span>
+									<span>30 +</span>
+								</li>
+								<li class="list-group-item d-flex justify-content-between align-items-center">
+									<span class="h6 fw-light mb-0"><i class="fas fa-fw fa-clock text-primary"></i>مدت زمان</span>
+									<span>1h</span>
+								</li>
+								<li class="list-group-item d-flex justify-content-between align-items-center">
+									<span class="h6 fw-light mb-0"><i class="fas fa-fw fa-signal text-primary"></i>سطح کلاس</span>
+									<span>مبتدی</span>
+								</li>
+								<li class="list-group-item d-flex justify-content-between align-items-center">
+									<span class="h6 fw-light mb-0"><i class="fas fa-fw fa-globe text-primary"></i>زبان</span>
+									<span>انگلیسی</span>
+								</li>
+								<li class="list-group-item d-flex justify-content-between align-items-center">
+									<span class="h6 fw-light mb-0"><i class="fas fa-fw fa-user-clock text-primary"></i>زبان آموزان</span>
+									<span>10 +</span>
+								</li>
+								<li class="list-group-item d-flex justify-content-between align-items-center">
+									<span class="h6 fw-light mb-0"><i class="fas fa-fw fa-medal text-primary"></i>ترم ها</span>
+									<span>3</span>
+								</li>
+							</ul>
+						</div>
+						<!-- Course info END -->
+					</div>
+
+					<div class="col-md-6 col-lg-12">
+						<!-- Recently Viewed START -->
+						<div class="card card-body shadow p-4 mb-4">
+							<!-- Title -->
+							<center><h4 class="mb-3">محبوب ترین کلاس ها</h4><center>
+							<!-- Course item START -->
+							<div class="row gx-3 mb-3">
+								<!-- Image -->
+								<div class="col-4">
+									<img class="rounded" src="assets/images/courses/4by3/21.jpg" alt="">
+								</div>
+								<!-- Info -->
+								<div class="col-8">
+									<h6 class="mb-0"><a href="a2.php">Aکلاس سطح 2 </a></h6>
+									<ul class="list-group list-group-borderless mt-1 d-flex justify-content-between">
+										<li class="list-group-item px-0 d-flex justify-content-between">
+											<span class="text-success">150T</span>
+											<span class="h6 fw-light">4.5<i class="fas fa-star text-warning ms-1"></i></span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!-- Course item END -->
+
+							<!-- Course item START -->
+							<div class="row gx-3">
+								<!-- Image -->
+								<div class="col-4">
+									<img class="rounded" src="assets/images/courses/4by3/18.jpg" alt="">
+								</div>
+								<!-- Info -->
+								<div class="col-8">
+									<h6 class="mb-0"><a href="b2.php">Bکلاس سطح 2</a></h6>
+									<ul class="list-group list-group-borderless mt-1 d-flex justify-content-between">
+										<li class="list-group-item px-0 d-flex justify-content-between">
+											<span class="text-success">170T</span>
+											<span class="h6 fw-light">4.0<i class="fas fa-star text-warning ms-1"></i></span>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<!-- Course item END -->
+						</div>
+						<!-- Recently Viewed END -->
+
+						<!-- Tags START -->
+						
+						<!-- Tags END -->
+					</div>
+				</div><!-- Row End -->
+			</div>
+			<!-- Right sidebar END -->
+
+		</div><!-- Row END -->
+	</div>
+</section>
+<!-- =======================
+Page content END -->
+
+<!-- =======================
+Listed courses START -->
+<section class="pb-5 pt-0 pt-lg-5">
+	<div class="container">
+		<!-- Title -->
+		<div class="row mb-4">
+			<div class="col-lg-8 mx-auto text-center">
+				<h2 class="fs-1">کلاس های آنلاین ما</h2>
+				<p class="mb-0"></p>
+			</div>
+		</div>
+		<div class="row">
+			<!-- Slider START -->
+				<center>
+			<div class="tiny-slider arrow-round arrow-blur arrow-hover">
+				<div class="tiny-slider-inner pb-1" data-autoplay="true" data-arrow="true" data-edge="2" data-dots="false" data-items="3" data-items-lg="2" data-items-sm="1">
+					<!-- Card item START -->
+					
+					<!-- Card item END -->
+
+					<!-- Card item START -->
+					<div>
+						<div class="card action-trigger-hover border bg-transparent">
+							<!-- Image -->
+							<img src="assets/images/courses/4by3/15.jpg" class="card-img-top" alt="course image">
+							<!-- Card body -->
+							<div class="card-body pb-0">
+								<!-- Badge and favorite -->
+								<div class="d-flex justify-content-between mb-3">
+									
+									
+									<a href="a2-online.html" class="h6 fw-light mb-0"><i class="far fa-bookmark"></i></a>
+								</div>
+								<!-- Title -->
+								<h5 class="card-title"><a href="a2.php">Aکلاس سطح 2</a></h5>
+								<!-- Rating -->
+								<div class="d-flex justify-content-between mb-2">
+									<div class="hstack gap-2">
+										<p class="text-warning m-0">4.0<i class="fas fa-star text-warning ms-1"></i></p>
+										<span class="small"></span>
+									</div>
+									<div class="hstack gap-2">
+										<p class="h6 fw-light mb-0 m-0">10 +</p>
+										<span class="small">(زبان آموزان)</span>
+									</div>
+								</div>
+								<!-- Time -->
+								<div class="hstack gap-3">
+									<span class="h6 fw-light mb-0"><i class="far fa-clock text-danger me-2"></i>1h</span>
+									<span class="h6 fw-light mb-0"><i class="fas fa-table text-orange me-2"></i>سه ترم</span>
+								</div>
+							</div>
+							<!-- Card footer -->
+							<div class="card-footer pt-0 bg-transparent">
+								<hr>
+								<!-- Avatar and Price -->
+								<div class="d-flex justify-content-between align-items-center">
+									<!-- Avatar -->
+									
+									
+									<!-- Price -->
+
+									<div>
+										<h4 class="text-success mb-0 item-show">150T</h4>
+										<a href="order-a2online.html" class="btn btn-sm btn-success-soft item-show-hover"><i class="fas fa-shopping-cart me-2"></i>پرداخت و ثبت نام</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Card item END -->
+
+					<!-- Card item START -->
+					<div>
+						<div class="card action-trigger-hover border bg-transparent">
+							<!-- Image -->
+							<img src="assets/images/courses/4by3/14.jpg" class="card-img-top" alt="course image">
+							<!-- Card body -->
+							<div class="card-body pb-0">
+								<!-- Badge and favorite -->
+								<div class="d-flex justify-content-between mb-3">
+									     
+									<a href="#" class="h6 fw-light mb-0"><i class="far fa-bookmark"></i></a>
+								</div>
+								<!-- Title -->
+								<h5 class="card-title"><a href="a1.php">Aکلاس سطح 1</a></h5>
+								<!-- Rating -->
+								<div class="d-flex justify-content-between mb-2">
+									<div class="hstack gap-2">
+										<p class="text-warning m-0">4.5<i class="fas fa-star text-warning ms-1"></i></p>
+										<span class="small"></span>
+									</div>
+									<div class="hstack gap-2">
+										<p class="h6 fw-light mb-0 m-0">10 +</p>
+										<span class="small">(زبان آموزان)</span>
+									</div>
+								</div>
+								<!-- Time -->
+								<div class="hstack gap-3">
+									<span class="h6 fw-light mb-0"><i class="far fa-clock text-danger me-2"></i>1h</span>
+									<span class="h6 fw-light mb-0"><i class="fas fa-table text-orange me-2"></i>سه ترم</span>
+								</div>
+							</div>
+							<!-- Card footer -->
+							<div class="card-footer pt-0 bg-transparent">
+								<hr>
+								<!-- Avatar and Price -->
+								<div class="d-flex justify-content-between align-items-center">
+									<!-- Avatar -->
+									
+									
+									<!-- Price -->
+									<div>
+										<h4 class="text-success mb-0 item-show">150T</h4>
+										<a href="https://iqzaban.ir/panel/index.php?rp=/store/khls-anlyn/a1" class="btn btn-sm btn-success-soft item-show-hover"><i class="fas fa-shopping-cart me-2"></i>پرداخت و ثبت نام</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Card item END -->
+
+					<!-- Card item START -->
+					<div>
+						<div class="card action-trigger-hover border bg-transparent">
+							<!-- Image -->
+							<img src="assets/images/courses/4by3/16.jpg" class="card-img-top" alt="course image">
+							<!-- Card body -->
+							<div class="card-body pb-0">
+								<!-- Badge and favorite -->
+								<div class="d-flex justify-content-between mb-3">
+									     
+									<a href="#" class="h6 fw-light mb-0"><i class="far fa-bookmark"></i></a>
+								</div>
+								<!-- Title -->
+							<h5 class="card-title"><a href="b2.php">Bکلاس سطح 2</a></h5>
+								<!-- Rating -->
+								<div class="d-flex justify-content-between mb-2">
+									<div class="hstack gap-2">
+										<p class="text-warning m-0">4.0<i class="fas fa-star text-warning ms-1"></i></p>
+										<span class="small"></span>
+									</div>
+									<div class="hstack gap-2">
+										<p class="h6 fw-light mb-0 m-0">10 +</p>
+										<span class="small">(زبان آموزان)</span>
+									</div>
+								</div>
+								<!-- Time -->
+								<div class="hstack gap-3">
+									<span class="h6 fw-light mb-0"><i class="far fa-clock text-danger me-2"></i>1h</span>
+									<span class="h6 fw-light mb-0"><i class="fas fa-table text-orange me-2"></i>سه ترم</span>
+								</div>
+							</div>
+							<!-- Card footer -->
+							<div class="card-footer pt-0 bg-transparent">
+								<hr>
+								<!-- Avatar and Price -->
+								<div class="d-flex justify-content-between align-items-center">
+									<!-- Avatar -->
+									
+									
+									<!-- Price -->
+									<div>
+										<h4 class="text-success mb-0 item-show">175T</h4>
+										<a href="https://iqzaban.ir/panel/index.php?rp=/store/khls-anlyn/b2" class="btn btn-sm btn-success-soft item-show-hover"><i class="fas fa-shopping-cart me-2"></i>پرداخت و ثبت نام</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="card action-trigger-hover border bg-transparent">
+							<!-- Image -->
+							<img src="assets/images/courses/4by3/1.jpg" class="card-img-top" alt="course image">
+							<!-- Card body -->
+							<div class="card-body pb-0">
+								<!-- Badge and favorite -->
+								<div class="d-flex justify-content-between mb-3">
+									     
+									<a href="#" class="h6 fw-light mb-0"><i class="far fa-bookmark"></i></a>
+								</div>
+								<!-- Title -->
+							<h5 class="card-title"><a href="c1.php">Cکلاس سطح 1</a></h5>
+								<!-- Rating -->
+								<div class="d-flex justify-content-between mb-2">
+									<div class="hstack gap-2">
+										<p class="text-warning m-0">4.0<i class="fas fa-star text-warning ms-1"></i></p>
+										<span class="small"></span>
+									</div>
+									<div class="hstack gap-2">
+										<p class="h6 fw-light mb-0 m-0">10 +</p>
+										<span class="small">(زبان آموزان)</span>
+									</div>
+								</div>
+								<!-- Time -->
+								<div class="hstack gap-3">
+									<span class="h6 fw-light mb-0"><i class="far fa-clock text-danger me-2"></i>1h</span>
+									<span class="h6 fw-light mb-0"><i class="fas fa-table text-orange me-2"></i>سه ترم</span>
+								</div>
+							</div>
+							<!-- Card footer -->
+							<div class="card-footer pt-0 bg-transparent">
+								<hr>
+								<!-- Avatar and Price -->
+								<div class="d-flex justify-content-between align-items-center">
+									<!-- Avatar -->
+									
+									
+									<!-- Price -->
+									<div>
+										<h4 class="text-success mb-0 item-show">185T</h4>
+										<a href="https://iqzaban.ir/panel/index.php?rp=/store/khls-anlyn/c1" class="btn btn-sm btn-success-soft item-show-hover"><i class="fas fa-shopping-cart me-2"></i>پرداخت و ثبت نام</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="card action-trigger-hover border bg-transparent">
+							<!-- Image -->
+							<img src="assets/images/courses/4by3/2.jpg" class="card-img-top" alt="course image">
+							<!-- Card body -->
+							<div class="card-body pb-0">
+								<!-- Badge and favorite -->
+								<div class="d-flex justify-content-between mb-3">
+									     
+									<a href="#" class="h6 fw-light mb-0"><i class="far fa-bookmark"></i></a>
+								</div>
+								<!-- Title -->
+							<h5 class="card-title"><a href="c2.php">Cکلاس سطح 2</a></h5>
+								<!-- Rating -->
+								<div class="d-flex justify-content-between mb-2">
+									<div class="hstack gap-2">
+										<p class="text-warning m-0">4.0<i class="fas fa-star text-warning ms-1"></i></p>
+										<span class="small"></span>
+									</div>
+									<div class="hstack gap-2">
+										<p class="h6 fw-light mb-0 m-0">10 +</p>
+										<span class="small">(زبان آموزان)</span>
+									</div>
+								</div>
+								<!-- Time -->
+								<div class="hstack gap-3">
+									<span class="h6 fw-light mb-0"><i class="far fa-clock text-danger me-2"></i>1h</span>
+									<span class="h6 fw-light mb-0"><i class="fas fa-table text-orange me-2"></i>سه ترم</span>
+								</div>
+							</div>
+							<!-- Card footer -->
+							<div class="card-footer pt-0 bg-transparent">
+								<hr>
+								<!-- Avatar and Price -->
+								<div class="d-flex justify-content-between align-items-center">
+									<!-- Avatar -->
+								
+								
+									<!-- Price -->
+									<div>
+										<h4 class="text-success mb-0 item-show">200T</h4>
+										<a href="https://iqzaban.ir/panel/index.php?rp=/store/khls-anlyn/c2" class="btn btn-sm btn-success-soft item-show-hover"><i class="fas fa-shopping-cart me-2"></i>پرداخت و ثبت نام</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- Card item END -->
+				</div>
+			</div>
+				<center>
+			<!-- Slider END -->
+		</div>
+	</div>
+</section>
+<!-- =======================
+Listed courses END -->
+
+</main>
+<!-- **************** MAIN CONTENT END **************** -->
+
+<!-- =======================
+Footer START -->
+<footer class="bg-dark p-3">
+	<div class="container">
+		<div class="row align-items-center">
+			<!-- Widget -->
+			
+			
+			
+			<!-- Widget -->
+			<center/> 
+			<div class="col-md-4 mb-3 mb-md-0">
+				<div class="text-center text-white">
+					 <a href="" target="_blank"" class="text-reset btn-link">تمامی حقوق مادی و معنوی این وبسایت متعلق به آیکیو زبان می باشد و هر گونه کپی برداری پیگرد قانونی دارد</a>
+				</div>
+			</div>
+			<center/> 
+			<!-- Widget -->
+			<div class="col-md-4">
+				<!-- Rating -->
+			
+			
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- =======================
+Footer END -->
+					
+<!-- Modal START -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-hidden="true">
+	<div class="modal-dialog modal-dialog-centered modal-lg">
+		<div class="modal-content">
+			<div class="modal-header border-0 bg-transparent">
+				<!-- Close button -->
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<!-- Modal body -->
+			<div class="modal-body px-5 pb-5 position-relative overflow-hidden">
+
+				<!-- Element -->
+				<figure class="position-absolute bottom-0 end-0 mb-n4 me-n4 d-none d-sm-block">
+					<img src="assets/images/element/01.svg" alt="element">
+				</figure>
+				<figure class="position-absolute top-0 end-0 z-index-n1 opacity-2">
+					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="818.6px" height="235.1px" viewBox="0 0 818.6 235.1">
+						<path class="fill-info" d="M735,226.3c-5.7,0.6-11.5,1.1-17.2,1.7c-66.2,6.8-134.7,13.7-192.6-16.6c-34.6-18.1-61.4-47.9-87.3-76.7 c-21.4-23.8-43.6-48.5-70.2-66.7c-53.2-36.4-121.6-44.8-175.1-48c-13.6-0.8-27.5-1.4-40.9-1.9c-46.9-1.9-95.4-3.9-141.2-16.5 C8.3,1.2,6.2,0.6,4.2,0H0c3.3,1,6.6,2,10,3c46,12.5,94.5,14.6,141.5,16.5c13.4,0.6,27.3,1.1,40.8,1.9 c53.4,3.2,121.5,11.5,174.5,47.7c26.5,18.1,48.6,42.7,70,66.5c26,28.9,52.9,58.8,87.7,76.9c58.3,30.5,127,23.5,193.3,16.7 c5.8-0.6,11.5-1.2,17.2-1.7c26.2-2.6,55-4.2,83.5-2.2v-1.2C790,222,761.2,223.7,735,226.3z"></path>
+					</svg>
+				</figure>
+				<!-- Title -->
+				<h2>Get Premium Course in <span class="text-success">$800</span></h2>
+				<p>Prosperous understood Middletons in conviction an uncommonly do. Supposing so be resolving breakfast am or perfectly.</p>
+				<!-- Content -->
+				<div class="row mb-3 item-collapse">
+					<div class="col-sm-6">
+						<ul class="list-group list-group-borderless">
+							<li class="list-group-item text-body"> <i class="bi bi-patch-check-fill text-success"></i>High quality Curriculum</li>
+							<li class="list-group-item text-body"> <i class="bi bi-patch-check-fill text-success"></i>Tuition Assistance</li>
+							<li class="list-group-item text-body"> <i class="bi bi-patch-check-fill text-success"></i>Diploma course</li>
+						</ul>
+					</div>
+					<div class="col-sm-6">
+						<ul class="list-group list-group-borderless">
+							<li class="list-group-item text-body"> <i class="bi bi-patch-check-fill text-success"></i>Intermediate courses</li>
+							<li class="list-group-item text-body"> <i class="bi bi-patch-check-fill text-success"></i>Over 200 online courses</li>
+						</ul>
+					</div>
+				</div>
+				<!-- Button -->
+				<a href="#" class="btn btn-lg btn-orange-soft">Purchase premium</a>
+			</div>
+			<!-- Modal footer -->
+			<div class="modal-footer d-block bg-info">
+				<div class="d-sm-flex justify-content-sm-between align-items-center text-center text-sm-start">
+					<!-- Social media button -->
+					<ul class="list-inline mb-0 social-media-btn mb-2 mb-sm-0">
+						<li class="list-inline-item"> <a class="btn btn-white btn-sm shadow px-2 text-facebook" href="#"><i class="fab fa-fw fa-facebook-f"></i></a> </li>
+						<li class="list-inline-item"> <a class="btn btn-white btn-sm shadow px-2 text-instagram" href="#"><i class="fab fa-fw fa-instagram"></i></a> </li>
+						<li class="list-inline-item"> <a class="btn btn-white btn-sm shadow px-2 text-twitter" href="#"><i class="fab fa-fw fa-twitter"></i></a> </li>
+						<li class="list-inline-item"> <a class="btn btn-white btn-sm shadow px-2 text-linkedin" href="#"><i class="fab fa-fw fa-linkedin-in"></i></a> </li>
+					</ul>
+				<!-- Contact info -->
+				<div>
+					<p class="mb-1 small"><a href="#" class="text-white"><i class="far fa-envelope fa-fw me-2"></i>example@gmail.com</a></p>
+					<p class="mb-0 small"><a href="#" class="text-white"><i class="fas fa-headset fa-fw me-2"></i>123-456-789</a></p>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>  
+<!-- Modal END -->
+
+<!-- Back to top -->
+
+
+<!-- Bootstrap JS -->
+<script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Vendors -->
+<script src="assets/vendor/tiny-slider/tiny-slider.js"></script>
+<script src="assets/vendor/glightbox/js/glightbox.js"></script>
+<script src="assets/vendor/choices/js/choices.min.js"></script>
+
+<!-- Template Functions -->
+<script src="assets/js/functions.js"></script>
+
+</body>
+
+<!-- Mirrored from eduport.webestica.com/course-detail.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 21 Jun 2023 07:35:27 GMT -->
+</html>
